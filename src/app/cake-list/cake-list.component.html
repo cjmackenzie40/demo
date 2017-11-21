@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>All Cakes</h1>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let cake of cakes">
+      <app-cake-item [cake]="cake" (cakeClick)="handleCakeClicked($event)"></app-cake-item>
+    </li>
+  </ul>
+</div>
