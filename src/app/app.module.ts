@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http'
 
 
 import { AppComponent } from './app.component';
@@ -15,7 +16,8 @@ import { CakeService } from './cake.service';
     CakeItemComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule
   ],
   providers: [CakeService],
   bootstrap: [AppComponent]
